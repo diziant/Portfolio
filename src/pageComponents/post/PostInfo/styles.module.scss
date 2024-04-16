@@ -22,3 +22,12 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .post-info {
+    &__container {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

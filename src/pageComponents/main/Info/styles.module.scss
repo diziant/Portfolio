@@ -1,0 +1,57 @@
+@import 'src/styles/variables';
+
+.info {
+  &__image {
+    float: left;
+    shape-outside: circle(55%);
+    transform: scale(1.04) rotate(-6deg);
+
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+  }
+
+  &__description {
+    position: relative;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 22px;
+    white-space: break-spaces;
+  }
+}
+
+@media screen and (min-width: $mini-desktop-more) {
+  .info {
+    &__image {
+      transition: all 450ms ease 0s;
+
+      &:hover {
+        transform: scale(1) rotate(0);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .info {
+    &__image {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

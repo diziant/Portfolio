@@ -6,7 +6,7 @@ interface Props {
   className?: string;
   skipLocaleHandling?: boolean;
   href: string;
-  locale: any;
+  locale?: any;
 }
 
 const LinkComponent: FC<Props> = ({ className, children, skipLocaleHandling, ...rest }) => {
@@ -21,8 +21,8 @@ const LinkComponent: FC<Props> = ({ className, children, skipLocaleHandling, ...
 
   return (
     <>
-      <Link className={className} href={href}>
-        <a {...rest}>{children}</a>
+      <Link className={className} href={href} {...rest}>
+        {children}
       </Link>
     </>
   );
