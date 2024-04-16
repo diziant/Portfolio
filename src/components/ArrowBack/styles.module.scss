@@ -1,0 +1,38 @@
+@import 'src/styles/variables';
+
+.back {
+  display: flex;
+  align-items: baseline;
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+
+    padding: 4px;
+
+    svg {
+      width: 22px;
+      min-width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__title {
+    margin-left: 8px;
+
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: $mini-desktop-more) {
+  .back {
+    &__arrow {
+      transition: all 450ms ease 0s;
+
+      &:hover {
+        transform: scale(1.2);
+        box-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import 'src/styles/variables';
+
+.container {
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto;
+
+  &_large {
+    max-width: $mean-desktop;
+    padding: 0 16px;
+  }
+
+  &_medium {
+    max-width: 992px;
+    padding: 0 16px;
+  }
+
+  &_small {
+    max-width: 872px;
+  }
+}

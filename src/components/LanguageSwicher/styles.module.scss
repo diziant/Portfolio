@@ -1,0 +1,7 @@
+@import 'src/styles/variables';
+
+.languageSwitcher {
+  &_current {
+    text-decoration: underline;
+  }
+}

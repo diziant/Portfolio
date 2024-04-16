@@ -1,0 +1,16 @@
+{
+  "posts": {
+    "tabTitle": "Все посты на нашем сайте",
+    "pageTitle": "Все посты"
+  },
+  "post": {
+    "tabTitle": "Пост",
+    "pageTitle": "Пост"
+  },
+  "category": "Категория",
+  "fields": {
+    "title": "Заголовок:",
+    "body": "Основное:",
+    "category": "Категория:"
+  }
+}

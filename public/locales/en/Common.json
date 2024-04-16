@@ -1,0 +1,31 @@
+{
+  "title": "Home | next-i18next",
+  "pages": {
+    "index": {
+      "tabTitle": "Index Page",
+      "pageTitle": "Long story short",
+      "description": "Hi, I'm Egor. I've been working as a frontend developer for more than 6 years. My general stack of technologies consists of JS, TS, React, Web3. As a state manager I use Redux, MobX, Zustand.\n\nI started with outstaffing company, where I've worked for 3 years. This company was selling me to other big companies for 3 or 4 months. I've worked in a lot of spheres such as banking sphere, market places, online shops. Each of them had different frontend teams. Some of them were large, included team-lead, 2 seniors/middles developers from frontend part, in some projects I was the only developer, in some I was with a partner. My grade on these projects was middle or middle+, because projects had already architecture. Yes, sure I've created some projects from the scratch and supported them in the future. But as I guess, I don't have enough experience to make good and strict architecture in every kind of turnkey projects from scratch.\n\nThe second part of my frontend way was a product company from crypto sphere. It was TruePNL. I've worked in it for 2 years. I've created and supported some projects. It's something like ecosystem. I've worked in three of them. A flagship project is Launchpad. I've developed it from the scratch. My team was so small for me it looked like a startup. Our development team consisted of one NodeJs backend developer, one frontend developer(me) and product manager/chief operating officer, who was developing smart-contracts on Soludity for us.\nOur project works on Binance Smart Chain, Polygon and Ethereum networks. Interaction with the blockchain works though Metamask wallet. I used web3 and web3-react libraries. A stack of technologies is React, TS, custom state manager works through context and hooks, looks like redux but easier and shorter, Next with locales(i18n) without some logic in ssr. I didn't have enough time to set it up. We didn't have end-to-end or unit tests but we had a opened bounty for testing, several half-time manual testers.\nWe have our own token. It's Pnl and another inner token for launchpad Pnlg. You can stake your pnl or use it for entering sales pools. The last one feature, which I've done is logic for nft types of the projects, but as I know it they haven't released it yet. We were working on scrum, 2 weeks sprints and very hybrid workflow.\n\nAnd the third part is still relevant at the moment, it's work in an international company, also from the crypto sphere. I worked for this company for more than a year. Developed and supported a DEX aggregator for the Cosmos ecosystem. Unlike the previous project Launchpad(TruePNL), this project had already been implemented by other developers and I had to support it and expand it with functionality. On this project, in addition to interacting with the already familiar Metamask, I also supported working with such wallets as Keplr, Station Wallet, Cosmostation Wallet, Leap Wallet. DEX works with more than 100 networks (Terra, Osmosis, Juno, Stargaze, Injective, etc.) and one of the main tasks was to implement them into the project and further correct operation of the networks in all parts of the terminal.The platform includes cross-chain transfers with support for the IBC protocol, SWAP exchange of tokens between blockchains and an NFT marketplace, some of the functionality of which was also added by me. English was used for communication. We also worked in two-week sprints with very hybrid workflow.\n\nConsidering all experience that I have now I'm looking for a product international company or outsourcing with a strict structure and road map. Because I've worked in outstaffing and in a startup. Now I wanna something more structured and thorough. Large or medium team which will have some frontend developers maybe with team-lead or just a senior/middle developer. I wanna pump up my skills in building architecture of project and, if possible, continue working with web3.",
+      "toPosts": "Go to Posts"
+    },
+    "404": {
+      "pageTitle": "404 Page",
+      "description": "404. Page not found",
+      "button": "Go Home"
+    }
+  },
+  "layout": {
+    "header": {
+      "title": ".Header"
+    },
+    "menu": {
+      "someWords": "About Me",
+      "allPosts": "Example SSG",
+      "linkedin": "Linked",
+      "hh": "hh",
+      "cv": ".DOCX"
+    },
+    "footer": {
+      "title": ".Footer"
+    }
+  }
+}

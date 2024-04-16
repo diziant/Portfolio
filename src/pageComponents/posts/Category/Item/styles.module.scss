@@ -1,0 +1,50 @@
+@import 'src/styles/variables';
+
+.item {
+  display: flex;
+  padding: 4px 2px;
+
+  &:nth-child(n + 2) {
+    margin-top: 6px;
+  }
+
+  &__number {
+    margin-right: 10px;
+
+    font-size: 18px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    text-align: left;
+  }
+
+  &__close {
+    svg {
+      width: 22px;
+      min-width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: $mini-desktop-more) {
+  .item {
+    transition: all 450ms ease 0s;
+    &:hover {
+      text-decoration: underline;
+      transform: scale(1.02);
+    }
+
+    &__close {
+      transition: all 450ms ease 0s;
+
+      &:hover {
+        transform: scale(1.5) translateX(-10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import 'src/styles/variables';
+
+.all-posts {
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__category {
+    &:nth-child(n + 2) {
+      margin-top: 12px;
+    }
+  }
+}

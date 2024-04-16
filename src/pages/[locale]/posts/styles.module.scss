@@ -1,0 +1,26 @@
+@import 'src/styles/variables';
+
+.posts {
+  display: flex;
+  flex: 1;
+
+  padding: 40px 0 40px;
+  background-color: $white-bg;
+
+  &__header {
+    margin-bottom: 16px;
+  }
+}
+
+.post {
+  display: flex;
+  flex: 1;
+
+  padding: 40px 0 40px;
+
+  background-color: $white-bg;
+
+  &__header {
+    margin-bottom: 16px;
+  }
+}

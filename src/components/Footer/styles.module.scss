@@ -1,0 +1,19 @@
+@import 'src/styles/variables';
+
+.footer {
+  width: 100%;
+  padding: 60px 0 50px;
+
+  background-color: $footer-bg;
+  color: $white-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+}

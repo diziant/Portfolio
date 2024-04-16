@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+
+.category {
+  padding: 16px 22px;
+  border: 4px dashed $ghost-lighter;
+
+  &:nth-child(n + 2) {
+    margin-top: 12px;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    font-size: 22px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+}

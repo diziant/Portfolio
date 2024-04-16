@@ -1,0 +1,62 @@
+@import 'src/styles/variables';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 4;
+
+  height: 70px;
+  display: flex;
+  align-items: center;
+
+  background-color: $ghost-lighter;
+
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s ease;
+
+  &_fixed {
+    background-color: $white-color;
+    border-bottom-color: $ghost-lighter;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__title {
+    margin-right: 8px;
+
+    font-weight: 500;
+  }
+
+  &__lang {
+    display: flex;
+
+    font-weight: 500;
+
+    &-item {
+      &:nth-child(n + 2) {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .header {
+    &__title {
+      display: none;
+    }
+  }
+}

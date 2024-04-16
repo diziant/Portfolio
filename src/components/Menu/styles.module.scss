@@ -1,0 +1,118 @@
+@import 'src/styles/variables';
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  &__list {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 13px;
+    line-height: 18px;
+
+    &:nth-child(n + 2) {
+      margin-left: 20px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+
+    padding: 10px 2px;
+
+    outline: none;
+    cursor: pointer;
+
+    &_linkedIn {
+      position: relative;
+      padding-right: 18px;
+
+      color: $menu-color-linked;
+      font-weight: 600;
+
+      transform: rotate(-2deg);
+
+      &:after {
+        content: 'in';
+        position: absolute;
+
+        width: 18px;
+        height: 18px;
+        margin-left: 1px;
+
+        text-align: center;
+        border-radius: 2px;
+        color: $white-color;
+        background-color: $menu-color-linked;
+      }
+    }
+
+    &_hh {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 28px;
+      height: 28px;
+
+      color: $white-color;
+      background-color: $menu-color-hh;
+      border-radius: 50%;
+      font-weight: 600;
+
+      transform: rotate(-2deg);
+    }
+
+    &_cv {
+      padding: 2px 7px 1px 3px;
+
+      color: $white-color;
+      background-color: $menu-color-cv;
+      font-weight: 500;
+      border-radius: 4px;
+
+      transform: rotate(-2deg);
+    }
+
+    &_active {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+
+        width: calc(100% - 4px);
+        height: 1px;
+
+        transform: skew(348deg, 356deg);
+        background-color: $primary-color;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $mini-desktop-more) {
+  .menu {
+    &__link {
+      transition: all 450ms ease 0s;
+
+      &:hover {
+        transform: scale(1.04) rotate(-6deg);
+        box-shadow: none;
+      }
+    }
+  }
+}

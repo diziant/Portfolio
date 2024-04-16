@@ -1,0 +1,16 @@
+{
+  "posts": {
+    "tabTitle": "All Posts in our site",
+    "pageTitle": "All Posts"
+  },
+  "post": {
+    "tabTitle": "Post",
+    "pageTitle": "Post"
+  },
+  "category": "Category",
+  "fields": {
+    "title": "title:",
+    "body": "body:",
+    "category": "category:"
+  }
+}

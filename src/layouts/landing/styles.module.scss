@@ -1,0 +1,27 @@
+@import 'src/styles/variables';
+
+.body {
+  background-color: $ghost-lighter;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+
+  padding-top: 70px;
+}
+
+@media screen and (min-width: $mini-desktop-more) {
+}
+
+@media screen and (max-width: $mini-desktop) {
+}
+
+@media screen and (max-width: $large-table) {
+}
+
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $extra-tablet) {
+}

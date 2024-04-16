@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+
+.post-info {
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    font-size: 22px;
+  }
+
+  &__box {
+    padding: 16px 22px;
+    border: 4px dashed $ghost-lighter;
+  }
+
+  &__field {
+    &:nth-child(n + 2) {
+      margin-top: 8px;
+    }
+  }
+}
