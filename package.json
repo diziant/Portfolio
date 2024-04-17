@@ -1,9 +1,9 @@
 {
   "private": true,
-  "homepage": "https://diziant.github.io/some-words",
+  "homepage": "https://diziant.github.io/Portfolio",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint .",
@@ -26,15 +26,15 @@
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@babel/plugin-proposal-decorators": "^7.21.0",
-    "@typescript-eslint/eslint-plugin": "^5.55.0",
-    "@typescript-eslint/parser": "^5.55.0",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
     "eslint": "^8.36.0",
-    "eslint-plugin-react": "^7.32.2",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.4",
     "typescript": "^4.8.3"
   }
