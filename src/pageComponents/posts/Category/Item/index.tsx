@@ -8,6 +8,7 @@ import { usePostsStore } from 'src/providers/RootStoreProvider';
 import { IconCloseModal } from 'public/icon/static-icon';
 
 import style from './styles.module.scss';
+import { Link } from 'src/components/Link';
 
 interface Props {
   innerData: {
@@ -29,12 +30,11 @@ export const Item: FC<Props> = ({ innerData }) => {
     deletePost(innerData.id).then(() => getPosts());
   };
 
-  const goTo = () => {
-    router.push(`/${router.query.locale}/posts/${innerData.id}`);
-  };
-
   return (
-    <button onClick={goTo} className={style.item} key={innerData.id}>
+    <Link
+      href={`/${router.query.locale}/posts/${innerData.id}`}
+      className={style.item}
+      key={innerData.id}>
       <span className={style.item__number}>{`${innerData.userId}.${innerData.id}`}</span>
       <div className={style.item__box}>
         <span>
@@ -49,6 +49,6 @@ export const Item: FC<Props> = ({ innerData }) => {
       <div className={style.item__close} onClick={(e) => onDelete(e)}>
         {IconCloseModal}
       </div>
-    </button>
+    </Link>
   );
 };
