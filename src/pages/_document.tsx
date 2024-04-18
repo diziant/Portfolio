@@ -32,7 +32,10 @@ const Document = (props: DocumentProps) => {
         <meta property="og:title" content="Info: Folomeev Egor" />
         <meta property="og:site_name" content="Info" />
         <meta property="og:url" content="https://diziant.github.io/Portfolio/" />
-        <meta property="og:image" content="https://ibb.co/4ghHq66" />
+        <meta
+          property="og:image"
+          content="https://lh3.googleusercontent.com/a/ACg8ocKvME3WZlCMWqQrW3FE6dPHk-jfgionqJQYa9o1cRk-HsQ5eFKj=s128-c"
+        />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Info: Folomeev Egor" />
@@ -40,7 +43,10 @@ const Document = (props: DocumentProps) => {
           name="twitter:description"
           content="Just a little information about my way, I’ll also try to expand it with examples of what seems interesting"
         />
-        <meta name="twitter:image" content="https://ibb.co/4ghHq66" />
+        <meta
+          name="twitter:image"
+          content="https://lh3.googleusercontent.com/a/ACg8ocKvME3WZlCMWqQrW3FE6dPHk-jfgionqJQYa9o1cRk-HsQ5eFKj=s128-c"
+        />
       </Head>
       <body>
         <Main />
