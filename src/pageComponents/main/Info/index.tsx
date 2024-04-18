@@ -19,7 +19,7 @@ export const MainInfo: FC<Props> = ({ className }) => {
       <h1 className={style.info__title}>{t('pages.index.pageTitle')}</h1>
       <div className={style.info__box}>
         <Image
-          src="/img/photo.webp"
+          src="/Portfolio/img/photo.webp"
           className={style.info__image}
           width={180}
           height={180}
