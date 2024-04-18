@@ -1,17 +1,13 @@
-import React, { FC } from 'react';
+import React from 'react';
 // import { NextPage } from 'next';
 import { appWithTranslation } from 'next-i18next';
+import type { AppProps } from 'next/app';
 
 import { RootStoreProvider } from 'src/providers/RootStoreProvider';
 
 import '../styles/global.css';
 
-interface Props {
-  Component: any;
-  pageProps: any;
-}
-
-const MyApp: FC<Props> = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <RootStoreProvider initialState={pageProps.initialState}>
       <Component {...pageProps} />

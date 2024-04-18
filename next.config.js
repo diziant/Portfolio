@@ -7,5 +7,8 @@ module.exports = {
   output: 'export',
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]
+  },
+  images: {
+    unoptimized: process.env.NODE_ENV === 'development' && true
   }
 };

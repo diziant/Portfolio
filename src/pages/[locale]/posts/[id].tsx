@@ -73,7 +73,7 @@ const getStaticProps: GetStaticProps = async (ctx) => {
         }
       }
     };
-  } catch (err: any) {
+  } catch (err) {
     return { props: { errors: err.message } };
   }
 };

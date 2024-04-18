@@ -22,7 +22,7 @@ const LanguageSwitchLink = ({ locale, className, ...rest }: ILanguageSwitherPara
       pName = pName.replace(`[${k}]`, locale);
       return;
     }
-    pName = pName.replace(`[${k}]`, router.query[k] as any);
+    pName = pName.replace(`[${k}]`, router.query[k] as string);
   });
   if (locale) {
     href = rest.href ? `/${locale}${rest.href}` : pName;

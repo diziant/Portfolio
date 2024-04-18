@@ -6,12 +6,12 @@ interface Props {
   className?: string;
   skipLocaleHandling?: boolean;
   href: string;
-  locale?: any;
+  locale?: string;
 }
 
 const LinkComponent: FC<Props> = ({ className, children, skipLocaleHandling, ...rest }) => {
   const router = useRouter();
-  const locale = rest.locale || router.query.locale || '';
+  const locale = (rest.locale || router.query.locale || '') as string;
 
   let href = rest.href || router.asPath;
   if (href.indexOf('http') === 0) skipLocaleHandling = true;
