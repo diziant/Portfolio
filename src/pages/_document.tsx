@@ -17,12 +17,30 @@ const Document = (props: DocumentProps) => {
           href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap"
         />
 
+        <meta name="theme-color" content="#efefef" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta property="title" content="Info: Folomeev Egor" key="title" />
+        <meta
+          name="description"
+          content="Just a little information about my way, I’ll also try to expand it with examples of what seems interesting"
+        />
         <meta
           name="keywords"
-          content="token, tokens, stake, staking, defi, IDO, allocation, launchpad"
+          content="Portfolio, CV, Egor Folomeev, information about projects, resume, history"
         />
-        <meta name="description" content="Description" />
-        <meta name="theme-color" content="#efefef" />
+
+        <meta property="og:title" content="Info: Folomeev Egor" />
+        <meta property="og:site_name" content="Info" />
+        <meta property="og:url" content="https://diziant.github.io/Portfolio/" />
+        <meta property="og:image" content="https://ibb.co/4ghHq66" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Info: Folomeev Egor" />
+        <meta
+          name="twitter:description"
+          content="Just a little information about my way, I’ll also try to expand it with examples of what seems interesting"
+        />
+        <meta name="twitter:image" content="https://ibb.co/4ghHq66" />
       </Head>
       <body>
         <Main />
