@@ -12,12 +12,14 @@
   display: flex;
   align-items: center;
 
-  background-color: $ghost-lighter;
+  background-color: $bg-accent;
+  color: $white-color;
 
   border-bottom: 1px solid transparent;
   transition: background-color 0.3s ease;
 
   &_fixed {
+    color: $ghost-darkest;
     background-color: $white-color;
     border-bottom-color: $ghost-lighter;
   }

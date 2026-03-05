@@ -26,12 +26,12 @@ export const Menu: FC<Props> = ({ className }) => {
       url: `/${router.query.locale}`,
       tab: true
     },
-    {
-      id: 2,
-      name: `${t('layout.menu.allPosts')}`,
-      url: `/${router.query.locale}/posts`,
-      tab: true
-    },
+    // {
+    //   id: 2,
+    //   name: `${t('layout.menu.allPosts')}`,
+    //   url: `/${router.query.locale}/posts`,
+    //   tab: true
+    // },
     {
       id: 3,
       name: `${t('layout.menu.linkedin')}`,
