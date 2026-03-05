@@ -23,9 +23,31 @@
   &__description {
     position: relative;
     font-size: 16px;
-    font-style: italic;
     line-height: 22px;
     white-space: break-spaces;
+  }
+
+  &__box {
+    min-height: 225px;
+  }
+
+  &__sub {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 28px;
+  }
+
+  &__upd {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    color: $ghost-dark;
+  }
+
+  &__intro {
+    color: $ghost-darkest;
+    font-style: italic;
   }
 }
 
@@ -39,6 +61,20 @@
         box-shadow: none;
       }
     }
+
+    &__upd {
+      margin-top: 18px;
+      margin-bottom: -28px;
+    }
+
+    &__intro {
+      padding-top: 22px;
+    }
+
+    &__sub {
+      margin-bottom: 16px;
+      text-align: center;
+    }
   }
 }
 
@@ -47,6 +83,21 @@
     &__image {
       width: 120px;
       height: 120px;
+    }
+
+    &__box {
+      min-height: 137px;
+    }
+
+    &__upd {
+      margin-bottom: -6px;
+    }
+
+    &__sub {
+      margin-top: 6px;
+      margin-bottom: 8px;
+      font-size: 20px;
+      line-height: 24px;
     }
 
     &__description {

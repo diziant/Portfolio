@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { useTranslation } from 'next-i18next';
+import { useTranslation, Trans } from 'next-i18next';
 import cx from 'classnames';
 import Image from 'next/image';
 
@@ -28,7 +28,57 @@ export const MainInfo: FC<Props> = ({ className }) => {
           blurDataURL={BLUR_IMAGE_B64}
           priority
         />
-        <span className={style.info__description}>{t('pages.index.description')}</span>
+        <div className={cx(style.info__description, style.info__intro)}>
+          <Trans
+            i18nKey="pages.index.description.intro"
+            ns="Common"
+            components={{ b: <strong className={style.info__highlight} /> }}
+          />
+        </div>
+      </div>
+      <div className={style.info__description}>
+        <span className={style.info__upd}>{t('pages.index.description.chapter1.upd')}</span>
+        <h2 className={style.info__sub}>{t('pages.index.description.chapter1.title')}</h2>
+        <Trans
+          i18nKey="pages.index.description.chapter1.description"
+          ns="Common"
+          components={{ b: <strong className={style.info__highlight} /> }}
+        />
+        <span className={style.info__upd}>{t('pages.index.description.chapter2.upd')}</span>
+        <h2 className={style.info__sub}>{t('pages.index.description.chapter2.title')}</h2>
+        <Trans
+          i18nKey="pages.index.description.chapter2.description"
+          ns="Common"
+          components={{ b: <strong className={style.info__highlight} /> }}
+        />
+        <span className={style.info__upd}>{t('pages.index.description.chapter3.upd')}</span>
+        <h2 className={style.info__sub}>{t('pages.index.description.chapter3.title')}</h2>
+        <Trans
+          i18nKey="pages.index.description.chapter3.description"
+          ns="Common"
+          components={{ b: <strong className={style.info__highlight} /> }}
+        />
+        <span className={style.info__upd}>{t('pages.index.description.chapter4.upd')}</span>
+        <h2 className={style.info__sub}>{t('pages.index.description.chapter4.title')}</h2>
+        <Trans
+          i18nKey="pages.index.description.chapter4.description"
+          ns="Common"
+          components={{ b: <strong className={style.info__highlight} /> }}
+        />
+        <span className={style.info__upd}>{t('pages.index.description.chapter5.upd')}</span>
+        <h2 className={style.info__sub}>{t('pages.index.description.chapter5.title')}</h2>
+        <Trans
+          i18nKey="pages.index.description.chapter5.description"
+          ns="Common"
+          components={{ b: <strong className={style.info__highlight} /> }}
+        />
+        <span className={style.info__upd}>{t('pages.index.description.chapter6.upd')}</span>
+        <h2 className={style.info__sub}>{t('pages.index.description.chapter6.title')}</h2>
+        <Trans
+          i18nKey="pages.index.description.chapter6.description"
+          ns="Common"
+          components={{ b: <strong className={style.info__highlight} /> }}
+        />
       </div>
     </div>
   );
