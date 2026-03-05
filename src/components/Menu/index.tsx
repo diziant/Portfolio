@@ -6,7 +6,7 @@ import cx from 'classnames';
 
 import { EMenuLinkFlag, TMenu } from 'src/types/posts';
 
-import { LINK_CV, LINK_CV_EN, LINK_LINKEDIN } from 'src/consts/static';
+import { LINK_LINKEDIN } from 'src/consts/static';
 
 import style from './styles.module.scss';
 
@@ -47,7 +47,7 @@ export const Menu: FC<Props> = ({ className }) => {
     {
       id: 5,
       name: `${t('layout.menu.cv')}`,
-      url: router.query.locale === 'en' ? LINK_CV_EN : LINK_CV,
+      url: t('cvUrl'),
       flag: EMenuLinkFlag.CV
     }
   ];
