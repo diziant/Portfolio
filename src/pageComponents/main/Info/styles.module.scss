@@ -2,6 +2,8 @@
 
 .info {
   &__image {
+    position: relative;
+    z-index: 1;
     float: left;
     shape-outside: circle(55%);
     transform: scale(1.04) rotate(-6deg);
